@@ -1,0 +1,83 @@
+/* Float Style */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background-color: #007BFF;
+    color: white;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+header .navbar {
+    display: block; 
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block; 
+    margin: 0 15px;
+}
+
+
+main {
+    margin-top: 60px; 
+    overflow: hidden;
+}
+
+/* Two-column layout */
+.main-content {
+    float: right; 
+    width: 70%; 
+}
+
+
+
+/* Clearfix for floated elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #007BFF;
+    color: white;
+    overflow: hidden; /* Clear floats */
+    padding: 20px;
+}
+
+footer div {
+    float: left; 
+    width: 30%; 
+    margin-right: 5%;
+}
+
+footer div:last-child {
+    margin-right: 0; 
+}
+
+.back-to-top {
+    position: absolute; 
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
